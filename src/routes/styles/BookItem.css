@@ -1,0 +1,7 @@
+.flexRow {
+  display: flex;
+}
+
+.listContainer {
+  border: solid black 0.1rem;
+}
