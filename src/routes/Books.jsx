@@ -1,13 +1,13 @@
-import Form from '../components/NewBookForm';
-import Books from '../components/BookList';
+import NewBook from '../components/NewBookForm';
+import RenderList from '../components/BookList';
 
 const Books = () => (
   <>
     <div>
-      <Books />
+      <RenderList />
     </div>
 
-    <Form />
+    <NewBook />
   </>
 
 );
