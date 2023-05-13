@@ -3,8 +3,8 @@ import {
 } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar';
-import BooksPage from './routes/BooksPage';
-import Categories from './routes/Categories';
+import BooksPage from './pages/BooksPage';
+import Categories from './pages/Categories';
 
 function App() {
   return (
@@ -13,8 +13,8 @@ function App() {
 
       <Routes>
         <Route path="/" element={<BooksPage />} />
-        <Route path="/Books" element={<BooksPage />} />
         <Route path="Categories" element={<Categories />} />
+        <Route path="*" element={<BooksPage />} />
       </Routes>
     </BrowserRouter>
   );
