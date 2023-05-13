@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import '../styles/BookItem.css';
 
-const BookItem = (
+const Book = (
   {
     category,
     title,
@@ -11,7 +11,7 @@ const BookItem = (
   },
 ) => (
   <>
-    <div className="flexRow listContainer">
+    <div className="bookContainer">
       <div>
         <p>{category}</p>
         <p>{title}</p>
@@ -30,7 +30,7 @@ const BookItem = (
 
 );
 
-BookItem.propTypes = {
+Book.propTypes = {
   category: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
@@ -38,4 +38,4 @@ BookItem.propTypes = {
   progress: PropTypes.string.isRequired,
 };
 
-export default BookItem;
+export default Book;

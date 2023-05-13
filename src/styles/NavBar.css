@@ -2,10 +2,10 @@ nav {
   display: flex;
 }
 
-.navTitle {
+.navContainer {
   display: flex;
 }
 
-.navItems {
+.navLinks {
   padding-left: 1rem;
 }

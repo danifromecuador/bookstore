@@ -1,9 +1,9 @@
 import {
-  BrowserRouter, Navigate, Route, Routes,
+  BrowserRouter, Route, Routes,
 } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar';
-import Books from './routes/Books';
+import BooksPage from './routes/BooksPage';
 import Categories from './routes/Categories';
 
 function App() {
@@ -12,9 +12,9 @@ function App() {
       <NavBar />
 
       <Routes>
-        <Route path="Books" element={<Books />} />
+        <Route path="/" element={<BooksPage />} />
+        <Route path="/Books" element={<BooksPage />} />
         <Route path="Categories" element={<Categories />} />
-        <Route path="/" element={<Navigate to="/Books" />} />
       </Routes>
     </BrowserRouter>
   );
