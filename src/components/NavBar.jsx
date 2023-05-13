@@ -1,5 +1,5 @@
 import { Link, NavLink } from 'react-router-dom';
-import '../styles/Navbar.css';
+import '../styles/NavBar.css';
 // import { FaUserCircle } from 'react-icons/fa';
 
 const NavBar = () => (
