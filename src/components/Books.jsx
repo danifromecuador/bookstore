@@ -1,9 +1,26 @@
 import Book from './Book';
 
 const Books = () => {
-  const list = [
+  const BooksArray = [
     {
+      id: 1,
       category: 'Action',
+      title: 'The Hunger Games',
+      author: 'Suzanne Collins',
+      progress: '64%',
+      chapter: 'Chapter 17',
+    },
+    {
+      id: 2,
+      category: 'Fantasy',
+      title: 'The Hunger Games',
+      author: 'Suzanne Collins',
+      progress: '64%',
+      chapter: 'Chapter 17',
+    },
+    {
+      id: 3,
+      category: 'Fantasy',
       title: 'The Hunger Games',
       author: 'Suzanne Collins',
       progress: '64%',
@@ -12,13 +29,18 @@ const Books = () => {
   ];
   return (
     <div>
-      <Book
-        category={list[0].category}
-        title={list[0].title}
-        author={list[0].author}
-        progress={list[0].progress}
-        chapter={list[0].chapter}
-      />
+      {
+        BooksArray.map((item) => (
+          <Book
+            key={item.id}
+            category={item.category}
+            title={item.title}
+            author={item.author}
+            progress={item.progress}
+            chapter={item.chapter}
+          />
+        ))
+      }
     </div>
   );
 };
