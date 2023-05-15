@@ -1,0 +1,11 @@
+nav {
+  display: flex;
+}
+
+.navContainer {
+  display: flex;
+}
+
+.navLinks {
+  padding-left: 1rem;
+}
