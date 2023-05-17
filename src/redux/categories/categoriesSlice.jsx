@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   categories: [],
@@ -9,9 +9,10 @@ const categoriesSlice = createSlice({
   name: 'categories',
   initialState,
   reducers: {
-    setStatus: (state, action) => {
-      state.status = action.payload;
-    },
+    setStatus: (state, action) => ({
+      ...state,
+      status: action.payload,
+    }),
   },
 });
 
