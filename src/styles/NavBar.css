@@ -1,9 +1,6 @@
 nav {
   display: flex;
-}
-
-.navContainer {
-  display: flex;
+  align-items: center;
 }
 
 .navLinks {
